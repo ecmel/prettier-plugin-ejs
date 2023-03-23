@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "./",
+    "target": "es6",
+    "moduleResolution": "node",
+    "declaration": false
+  },
+  "exclude": ["node_modules"]
+}
