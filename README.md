@@ -10,4 +10,4 @@ npm install --save-dev prettier-plugin-ejs
 
 ## Warning
 
-The greater then symbol `>` should not be used inside `<% %>`tags.
+Tags which contains the greater then symbol `>` are not formatted.
