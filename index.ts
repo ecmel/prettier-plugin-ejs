@@ -1,7 +1,7 @@
 import { Parser, ParserOptions } from "prettier";
 import { parsers as htmlParsers } from "prettier/parser-html";
 
-const regex = /<textarea.*?<\/textarea|"[^"]*"|(<%([^>]*?)%>)/gs;
+const regex = /"[^"]*"|<textarea.*?<\/textarea|(<%([^>]*?)%>)/gs;
 
 function parse(
   text: string,

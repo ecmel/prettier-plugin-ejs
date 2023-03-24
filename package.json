@@ -1,7 +1,7 @@
 {
   "name": "prettier-plugin-ejs",
   "displayName": "Prettier EJS Plugin",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A prettier plugin for Embedded JavaScript Templating.",
   "keywords": [
     "prettier",
@@ -25,12 +25,14 @@
   "scripts": {
     "clean": "git clean -Xdf",
     "format": "prettier --ignore-path .gitignore --write .",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepack": "npm run clean && npm install && npm run build"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/prettier": "^2.7.2",
     "prettier": "^2.8.6",
+    "prettier-plugin-ejs": "file:../prettier-plugin-ejs",
     "rollup": "^3.20.1",
     "tslib": "^2.5.0"
   },
