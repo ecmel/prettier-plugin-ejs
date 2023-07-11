@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./",
     "target": "es6",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "declaration": false
   },
   "exclude": ["node_modules"]

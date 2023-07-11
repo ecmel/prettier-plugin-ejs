@@ -43,11 +43,7 @@ npm install --save-dev prettier-plugin-ejs
     <% } %>
   </div>
 
-  <div>
-    <% 
-      const a = 0;
-    %>
-  </div>
+  <div><% const a = 0; %></div>
 
   <div class="<%= red %>"><%= 1 > 0 %></div>
   <textarea><%= text %></textarea>
