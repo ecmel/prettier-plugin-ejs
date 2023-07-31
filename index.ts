@@ -16,6 +16,13 @@ function parse(
 }
 
 export default {
+  languages: [
+    {
+      name: "EJS",
+      parsers: ["html"],
+      extensions: [".ejs"],
+    },
+  ],
   parsers: {
     html: {
       ...htmlParsers.html,
