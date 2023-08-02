@@ -9,7 +9,7 @@ function parse(
   options: ParserOptions
 ) {
   return htmlParsers.html.parse(
-    text.replace(regex, (m, t, c) => (!t ? m : `<?${c}?>`)),
+    text.replace(regex, (m, t, c) => (!t ? m : `<!${c}!>`)),
     parsers,
     options
   );
