@@ -2,15 +2,21 @@ const { parsers } = require("prettier/parser-html");
 
 const regex = /"[^"]*"|<textarea.*?<\/textarea|(<%([^>]*?)%>)/gs;
 
-function parse(text, parserOrOptions, optionsOrUndefined) {
+function parse(text, parsersOrOptions, optionsOrUndefined) {
   return parsers.html.parse(
     text.replace(regex, (m, t, c) => (!t ? m : `<!${c}!>`)),
-    parserOrOptions,
+    parsersOrOptions,
     optionsOrUndefined
   );
 }
 
 module.exports = {
+  parsers: {
+    html: {
+      ...parsers.html,
+      parse,
+    },
+  },
   languages: [
     {
       name: "EJS",
@@ -18,10 +24,4 @@ module.exports = {
       extensions: [".ejs"],
     },
   ],
-  parsers: {
-    html: {
-      ...parsers.html,
-      parse,
-    },
-  },
 };
