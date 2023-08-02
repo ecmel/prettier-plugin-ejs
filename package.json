@@ -1,43 +1,40 @@
 {
   "name": "prettier-plugin-ejs",
   "displayName": "Prettier EJS Plugin",
-  "version": "0.0.13",
-  "description": "A prettier plugin for Embedded JavaScript Templating.",
+  "version": "0.0.14",
+  "description": "A Prettier plugin for Embedded JavaScript Templating (EJS).",
   "keywords": [
     "prettier",
     "plugin",
     "ejs",
     "html"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ecmel/prettier-plugin-ejs.git"
-  },
   "author": {
     "name": "Ecmel Ercan",
     "url": "https://github.com/ecmel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecmel/prettier-plugin-ejs.git"
   },
   "license": "MIT",
   "files": [
     "index.js"
   ],
+  "prettier": {
+    "plugins": [
+      "./index.js"
+    ]
+  },
   "main": "index.js",
   "scripts": {
     "clean": "git clean -Xdf",
-    "format": "prettier --ignore-path .gitignore --write .",
-    "build": "rollup -c",
-    "prepack": "npm run clean && npm install && npm run build"
+    "format": "prettier --ignore-path .gitignore --write ."
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.2",
-    "@types/prettier": "^2.7.3",
-    "prettier": "^2.8.8",
-    "prettier-plugin-ejs": "file:../prettier-plugin-ejs",
-    "rollup": "^3.27.0",
-    "tslib": "^2.6.1",
-    "typescript": "^5.1.6"
+    "prettier": "^2.8.8"
   },
   "peerDependencies": {
-    "prettier": "2.x"
+    "prettier": "2.x - 3.x"
   }
 }

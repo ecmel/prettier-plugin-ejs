@@ -21,7 +21,7 @@ npm install --save-dev prettier-plugin-ejs
 
   <!-- prettier-ignore -->
   <div>
-    <% 
+    <%
       const a = 0;
     %>
   </div>
