@@ -8,6 +8,14 @@ This plugin formats [EJS](https://ejs.co/) markup in `html` files. It uses the d
 npm install --save-dev prettier-plugin-ejs
 ```
 
+Plugin should be manually loaded for Prettier 3:
+
+```sh
+prettier --plugin=prettier-plugin-ejs --write .
+```
+
+Please check [Prettier Docs](https://prettier.io/docs/en/plugins.html) for other options.
+
 ## Example
 
 ### Before

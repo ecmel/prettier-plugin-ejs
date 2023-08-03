@@ -25,7 +25,7 @@
   "type": "commonjs",
   "scripts": {
     "clean": "git clean -Xdf",
-    "format": "prettier --ignore-path .gitignore --plugin ./index.js --write ."
+    "format": "prettier --ignore-path=.gitignore --plugin=./index.js --write ."
   },
   "devDependencies": {
     "prettier": "^2.8.8"
