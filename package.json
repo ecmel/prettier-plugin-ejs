@@ -21,20 +21,14 @@
   "files": [
     "index.js"
   ],
-  "prettier": {
-    "plugins": [
-      "prettier-plugin-ejs"
-    ]
-  },
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
     "clean": "git clean -Xdf",
-    "format": "prettier --ignore-path .gitignore --write ."
+    "format": "prettier --ignore-path .gitignore --plugin ./index.js --write ."
   },
   "devDependencies": {
-    "prettier": "^2.8.8",
-    "prettier-plugin-ejs": "file:../prettier-plugin-ejs"
+    "prettier": "^2.8.8"
   },
   "peerDependencies": {
     "prettier": "2.x - 3.x"
