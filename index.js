@@ -11,12 +11,6 @@ function parse(text, parsersOrOptions, optionsOrUndefined) {
 }
 
 module.exports = {
-  parsers: {
-    html: {
-      ...parsers.html,
-      parse,
-    },
-  },
   languages: [
     {
       name: "EJS",
@@ -24,4 +18,10 @@ module.exports = {
       extensions: [".ejs"],
     },
   ],
+  parsers: {
+    html: {
+      ...parsers.html,
+      parse,
+    },
+  },
 };
