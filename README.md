@@ -37,6 +37,7 @@ Please check [Prettier Docs](https://prettier.io/docs/en/plugins.html) for other
   </div>
 
   <div class="<%= red %>"><%= 1 > 0 %></div>
+
   <textarea><%= text %></textarea>
   <code><%= text %></code>
   <pre><%= text %></pre>
@@ -60,6 +61,7 @@ Please check [Prettier Docs](https://prettier.io/docs/en/plugins.html) for other
   </div>
 
   <div class="<%= red %>"><%= 1 > 0 %></div>
+
   <textarea><%= text %></textarea>
   <code><%= text %></code>
   <pre><%= text %></pre>

@@ -1,7 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><%= title %></title>
+    <title><%= text %></title>
   </head>
   <body>
     <div>
@@ -17,10 +17,22 @@
         %>
       </div>
 
-      <div class="<%= red %>"><%= 1 > 0 %></div>
+      <div class="<%= text %>"><%= 1 > 0 %></div>
+
       <textarea><%= text %></textarea>
       <code><%= text %></code>
       <pre><%= text %></pre>
+      <a href="<%= text %>"><%= text %></a>
+
+      <table>
+        <tr>
+          <td>
+            <%= text %>
+            <%= text %>
+          </td>
+          <td><%= text %></td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>
