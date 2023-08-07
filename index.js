@@ -1,6 +1,8 @@
 const { parsers } = require("prettier/parser-html");
 
-const regex = /"[^"]*"|<textarea.*?<\/textarea|(<%([^>]*?)%>)/gs;
+const regex =
+  /"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*'|<textarea.*?<\/textarea|(<%([^>]*?)%>)/gs;
+
 const replacer = (m, t, c) => (!t ? m : `<!${c}!>`);
 
 function parse(text, options, legacy) {
