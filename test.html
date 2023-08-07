@@ -1,18 +1,26 @@
-<div>
-  <div>
-    <% if (condition) { %>
-    <% } else if (condition) { %>
-    <% } %>
-  </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <% if (condition) { %>
+        <% } else if (condition) { %>
+        <% } %>
+      </div>
 
-  <div>
-    <% 
-      const a = 0;
-    %>
-  </div>
+      <div>
+        <% 
+          const a = 0;
+        %>
+      </div>
 
-  <div class="<%= red %>"><%= 1 > 0 %></div>
-  <textarea><%= text %></textarea>
-  <code><%= text %></code>
-  <pre><%= text %></pre>
-</div>
+      <div class="<%= red %>"><%= 1 > 0 %></div>
+      <textarea><%= text %></textarea>
+      <code><%= text %></code>
+      <pre><%= text %></pre>
+    </div>
+  </body>
+</html>
