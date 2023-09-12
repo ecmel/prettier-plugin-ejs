@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><%= text %></title>
+    <title><!= text !></title>
   </head>
   <body>
     <div>
@@ -26,6 +26,16 @@
           <td><%= text %></td>
         </tr>
       </table>
+
+      <textarea>
+        <div></div>
+        <%- include("../_partials/teaser-animation.html", { page }) %>
+      </textarea>
+
+      <textarea>
+        <%= text %>
+        <%- include("../_partials/teaser-animation.html", { page }) %>
+      </textarea>
     </div>
   </body>
 </html>

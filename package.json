@@ -1,7 +1,7 @@
 {
   "name": "prettier-plugin-ejs",
   "displayName": "Prettier EJS Plugin",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "A Prettier plugin for Embedded JavaScript Templating (EJS).",
   "keywords": [
     "prettier",
