@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 1986-2023 Ecmel Ercan <ecmel.ercan@gmail.com>
+ * Licensed under the MIT License
+ */
+
 const { parsers } = require("prettier/parser-html");
 
 const regex =
