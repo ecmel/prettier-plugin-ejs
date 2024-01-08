@@ -5,13 +5,10 @@
 
 const { parsers } = require("prettier/parser-html");
 
-const regex =
-  /"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*'|<title.*?>.*?<\/title>|<textarea.*?>.*?<\/textarea>|<script.*?>.*?<\/script>|(<%([^>]*?)%>)/gs;
-
-const replacer = (m, t, c) => (!t ? m : `<!${c}!>`);
-
 function parse(text, options, legacy) {
-  return parsers.html.parse(text.replace(regex, replacer), options, legacy);
+  const find = /(?:<(textarea|title|script).*?<\/\1|(["']).*?\2|<%([^>]*)%>)/gs;
+  text = text.replace(find, (match, p1, p2, p3) => (p3 ? `<!${p3}!>` : match));
+  return parsers.html.parse(text, options, legacy);
 }
 
 module.exports = {
