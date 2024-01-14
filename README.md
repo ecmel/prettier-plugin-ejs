@@ -55,6 +55,16 @@ Please check [Prettier Docs](https://prettier.io/docs/en/plugins.html) for other
 </div>
 ```
 
+## Nested Tag
+
+```html
+<td <% if (styleData) { %>
+  style="<%= styleData %>" <% } %>>
+  <%= data %>
+  <%= data %>
+</td>
+```
+
 ## Note
 
 Tags which contains the greater then symbol `>` are ignored.
